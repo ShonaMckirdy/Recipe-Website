@@ -1,0 +1,67 @@
+/* lets first gove some styles to the body so eceryhting displays correctly */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;     /*this forces the screen to be at a certain height. */
+}
+
+main {
+    flex: 1; /*CSS rule to say you want the main thing to take up the entire space */
+}
+
+.container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/* rn the images are quite bg and take up a lot of space on the page */
+img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+/* adding a footer is alos quite a common thig. usually holding contact details, usefu links ,or info */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    height: 100px;
+    padding: 20px;
+}
+
+footer a {
+    margin: 5px;
+    text-decoration: none !important; /*this gets rid of lines underneath links! */
+
+}
+
+.social-icon {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    align-items: center;
+    border-radius: 50%; /*should basically be in circle boxes*/
+    justify-content: center;
+}
+
+.social-icon:hover {
+    color: red;
+}
+
+hr {
+    width: 75%;
+    border: 1.5px solid grey;
+    border-radius: 50%;
+}
+
+#go-to-top-button {
+    width: 50px;
+    height: 50px;
+    position: fixed; /*its always here on the page*/
+    bottom:20px;
+    right: 20px;
+    display: none;
+}
+
